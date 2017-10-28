@@ -10,8 +10,8 @@ int * pointer_to_a = &a;
 a ++;
 
 // we just changed the variable a again!
-*pointer_to_a +=1; // *pointer_to_a ++ doesn't work
+(*pointer_to_a) ++; // *pointer_to_a ++ doesn't work
 
 // will print out 3
-printf("The value of a is now %d\n", a);
+printf("The value of a is now %d.\n", a);
 }
